@@ -35,7 +35,7 @@ public class Telefono implements Serializable{
 
     
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
 
     private Empleado empleado;
 

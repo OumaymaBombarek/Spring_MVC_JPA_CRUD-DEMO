@@ -60,7 +60,7 @@ public class Empleado implements Serializable {
     // para que pertenezca a un departamento
     // muchos empleados puedenm pertenecer a un deapartamento- cascade update and delete
     
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.PERSIST)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH)
 
     private Departamento departamento;
 
