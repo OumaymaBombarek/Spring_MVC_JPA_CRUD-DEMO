@@ -45,4 +45,9 @@ public class DepartamentoServiceImpl implements DepartamentoService  {
        
     }
 
+    @Override
+    public void persistirDpto(Departamento departamento) {
+        departamentoDao.save(departamento);
+    }
+
 }

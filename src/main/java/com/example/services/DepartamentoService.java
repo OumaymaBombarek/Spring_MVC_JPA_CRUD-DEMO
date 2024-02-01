@@ -10,5 +10,6 @@ public interface DepartamentoService  {
 
     public List<Departamento> departamentos();
     public Departamento dameUnDepartamento(int idDepartamento);
+    public void persistirDpto(Departamento departamento);
 
 }
